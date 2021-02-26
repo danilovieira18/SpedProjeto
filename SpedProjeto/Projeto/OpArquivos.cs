@@ -34,6 +34,24 @@ namespace SpedProjeto.Projeto {
             }
             string retorno = String.Concat(parteLinha);
             return retorno;
-        }
+        } // analisa os 5 primeiros caracteres para identificar o bloco a que a linha pertence
+
+        public string AlteraItemLinha(string linha, string novoValor, string antigoValor) {
+            return linha.Replace(antigoValor, novoValor);
+
+        } //Localiza item em linha e substitui por parametro passado
+        public int ContaPipe(string linha) {
+            int qtd = 0;
+
+            for (int i = 0; i < linha.Length; i++) {
+                if (linha[i].Equals('|')) {
+                    qtd++;
+                }
+                else {
+                    continue;
+                }
+            }
+            return qtd;
+        } // contador de pipes por linha
     }
 }
