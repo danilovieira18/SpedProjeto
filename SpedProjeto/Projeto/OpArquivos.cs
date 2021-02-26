@@ -39,7 +39,7 @@ namespace SpedProjeto.Projeto {
         public string AlteraItemLinha(string linha, string novoValor, string antigoValor) {
             return linha.Replace(antigoValor, novoValor);
 
-        } //Localiza item em linha e substitui por parametro passado
+        } //Localiza item em linha e substitui por parametro 
         public int ContaPipe(string linha) {
             int qtd = 0;
 
